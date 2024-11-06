@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticker AI</title>
+    <link rel="stylesheet" href="main.css" />
+    <!-- font awsome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="mt-5 px-2 md:px-5">
+      <nav class="container mx-auto flex items-center justify-between">
+        <div class="flex gap-1 items-center md: gap-3">
+          <img
+            src="images/tickerAI-logo 1.png"
+            alt="logo"
+            class="w-10 md:w-fit"
+          />
+          <p class="text-[8px] md:text-xs">
+            A Mark Cuban Company <br />
+            AI-based Financial Market News Aggregator
+          </p>
+        </div>
+        <div class="flex items-center gap-1 md:gap-6">
+        <a href="personal.html">
+          <button
+          class="bg-[#5677AC] text-xs md:text-base text-white py-1 md:py-3 px-2 md:px-4 rounded-md font-semibold hover:bg-[#42669c] transition hover:scale-105 hover:translate-y-1"
+        >
+          Personalize News
+        </button>
+        </a>
+          <div
+            class="text-[#5677AC] bg-[#5677AC26] size-9 flex items-center justify-center rounded-full md:text-xl text-xs md:font-extrabold font-semibold hover:scale-105"
+          >
+            IK
+          </div>
+          <label class="grid cursor-pointer place-items-center">
+            <input
+              type="checkbox"
+              value="synthwave"
+              class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1" />
+            <svg
+              class="stroke-base-100 fill-base-100 col-start-1 row-start-1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path
+                d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <svg
+              class="stroke-base-100 fill-base-100 col-start-2 row-start-1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </label>
+        </div>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main>
+      <!-- banner section -->
+      <section
+        class="bg-[url('https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-no-repeat bg-cover h-[350px] md:space-y-3 flex justify-center flex-col items-center mt-10"
+      >
+        <div class="mb-5 md:mb-10">
+          <img src="images/image 2.png" alt="TikerAI" />
+        </div>
+        <div class="bg-white p-2 md:p-4 rounded flex items-center">
+          <i class="fa fa-search"></i>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search any market topic..."
+            class="md:w-[520px] w-full rounded outline-none"
+          />
+        </div>
+        <div>
+          <p class="text-xs text-gray-200">
+            There are 6 articles available for your preferences
+          </p>
+        </div>
+      </section>
+      <section class="md:flex md:gap-x-5">
+        <!-- news section -->
+        <section
+          class="mt-6 md:mt-10 container mx-auto p-3 md:w-[70%] w-[100%]"
+        >
+          <!-- All card left -->
+          <section>
+            <div
+              class="flex items-center justify-between border-b-2 border-[#333333]"
+            >
+              <h2 class="head">All news</h2>
+              <p class="text-[14px] mb-3">
+                Filter by :
+
+                <span class="font-bold"
+                  >Stocks <i class="fa-solid fa-chevron-down"></i
+                ></span>
+              </p>
+            </div>
+            <!-- Individual Stocks -->
+            <section class="mb-6">
+              <h2
+                class="text-lg md:text-2xl text-[#333333] font-semibold md:mt-5 mt-3 mb-2"
+              >
+                Individual Stocks
+              </h2>
+              <!-- card -->
+              <div
+                class="mt-4 md:flex md:gap-x-5 items-center border p-3 hover:scale-105 transition duration-300 ease-out hover:ease-in"
+              >
+                <img
+                  src="images/Rectangle 6.png"
+                  class="w-full h-44 object-cover md:h-fit md:size-[150px] py-2 md:py-3"
+                  alt=""
+                />
+                <div>
+                  <div class="flex gap-3">
+                    <h4 class="list">Dow jones</h4>
+                    <h4 class="list">Nasdaq</h4>
+                    <h4 class="list">S & P 500</h4>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-[#333333] my-3">
+                      Nzd/usd forex technical analysis - traders will be
+                      monitoring fed for future rate hike clues
+                    </h3>
+                    <p class="text-[#616161] text-sm mb-3">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet...
+                    </p>
+                    <div class="flex gap-x-6 text-sm text-[#616161]">
+                      <p>06 September 2022</p>
+                      <p>
+                        By <span class="uppercase text-[#5677AC]">Amado </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="mb-6">
+              <!-- card -->
+              <div
+                class="mt-4 md:flex md:gap-x-5 items-center border p-3 hover:scale-105 transition duration-300 ease-out hover:ease-in"
+              >
+                <img
+                  src="images/Rectangle 7.png"
+                  class="w-full h-44 object-cover md:h-fit md:size-[150px] py-2 md:py-3"
+                  alt=""
+                />
+                <div>
+                  <div class="flex gap-3">
+                    <h4 class="list">Dow jones</h4>
+                    <h4 class="list">Nasdaq</h4>
+                    <h4 class="list">S & P 500</h4>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-[#333333] my-3">
+                      Nzd/usd forex technical analysis - traders will be
+                      monitoring fed for future rate hike clues
+                    </h3>
+                    <p class="text-[#616161] text-sm mb-3">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet...
+                    </p>
+                    <div class="flex gap-x-6 text-sm text-[#616161]">
+                      <p>06 September 2022</p>
+                      <p>
+                        By <span class="uppercase text-[#5677AC]">Amado </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="md:mb-16 mb-6">
+              <!-- card -->
+              <div
+                class="mt-4 md:flex md:gap-x-5 items-center border p-3 hover:scale-105 transition duration-300 ease-out hover:ease-in"
+              >
+                <img
+                  src="images/Rectangle 8.png"
+                  class="w-full h-44 object-cover md:h-fit md:size-[150px] py-2 md:py-3"
+                  alt=""
+                />
+                <div>
+                  <div class="flex gap-3">
+                    <h4 class="list">Dow jones</h4>
+                    <h4 class="list">Nasdaq</h4>
+                    <h4 class="list">S & P 500</h4>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-[#333333] my-3">
+                      Rupee inches 5 paise higher to 77.99 against us dollar in
+                      early trade
+                    </h3>
+                    <p class="text-[#616161] text-sm mb-3">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet...
+                    </p>
+                    <div class="flex gap-x-6 text-sm text-[#616161]">
+                      <p>06 September 2022</p>
+                      <p>
+                        By <span class="uppercase text-[#5677AC]">Amado </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Stock Sectors -->
+            <section class="mb-6">
+              <h2
+                class="text-lg md:text-2xl text-[#333333] font-semibold md:mt-5 mt-3 mb-2"
+              >
+                Stock Sectors
+              </h2>
+              <!-- card -->
+              <div
+                class="mt-4 md:flex md:gap-x-5 items-center border p-3 hover:scale-105 transition duration-300 ease-out hover:ease-in"
+              >
+                <img
+                  src="images/Rectangle 6 (1).png"
+                  class="w-full h-44 object-cover md:h-fit md:size-[150px] py-2 md:py-3"
+                  alt=""
+                />
+                <div>
+                  <div class="flex gap-3">
+                    <h4 class="list">Dow jones</h4>
+                    <h4 class="list">Nasdaq</h4>
+                    <h4 class="list">S & P 500</h4>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-[#333333] my-3">
+                      Nzd/usd forex technical analysis - traders will be
+                      monitoring fed for future rate hike clues
+                    </h3>
+                    <p class="text-[#616161] text-sm mb-3">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet...
+                    </p>
+                    <div class="flex gap-x-6 text-sm text-[#616161]">
+                      <p>06 September 2022</p>
+                      <p>
+                        By <span class="uppercase text-[#5677AC]">Amado </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="mb-6">
+              <!-- card -->
+              <div
+                class="mt-4 md:flex md:gap-x-5 items-center border p-3 hover:scale-105 transition duration-300 ease-out hover:ease-in"
+              >
+                <img
+                  src="images/Rectangle 7 (1).png"
+                  class="w-full h-44 object-cover md:h-fit md:size-[150px] py-2 md:py-3"
+                  alt=""
+                />
+                <div>
+                  <div class="flex gap-3">
+                    <h4 class="list">Dow jones</h4>
+                    <h4 class="list">Nasdaq</h4>
+                    <h4 class="list">S & P 500</h4>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-[#333333] my-3">
+                      Nzd/usd forex technical analysis - traders will be
+                      monitoring fed for future rate hike clues
+                    </h3>
+                    <p class="text-[#616161] text-sm mb-3">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet...
+                    </p>
+                    <div class="flex gap-x-6 text-sm text-[#616161]">
+                      <p>06 September 2022</p>
+                      <p>
+                        By <span class="uppercase text-[#5677AC]">Amado </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Stock Market Topics -->
+            <section class="md:mb-16 mb-6">
+              <h2
+                class="text-lg md:text-2xl text-[#333333] font-semibold md:mt-5 mt-3 mb-2"
+              >
+                Stock Market Topics
+              </h2>
+              <!-- card -->
+              <div
+                class="mt-4 md:flex md:gap-x-5 items-center border p-3 hover:scale-105 transition duration-300 ease-out hover:ease-in"
+              >
+                <img
+                  src="images/Rectangle 6 (2).png"
+                  class="w-full h-44 object-cover md:h-fit md:size-[150px] py-2 md:py-3"
+                  alt=""
+                />
+                <div>
+                  <div class="flex gap-3">
+                    <h4 class="list">Dow jones</h4>
+                    <h4 class="list">Nasdaq</h4>
+                    <h4 class="list">S & P 500</h4>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-[#333333] my-3">
+                      Nzd/usd forex technical analysis - traders will be
+                      monitoring fed for future rate hike clues
+                    </h3>
+                    <p class="text-[#616161] text-sm mb-3">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet...
+                    </p>
+                    <div class="flex gap-x-6 text-sm text-[#616161]">
+                      <p>06 September 2022</p>
+                      <p>
+                        By <span class="uppercase text-[#5677AC]">Amado </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+        <!-- aside section -->
+        <section class="mt-6 md:mt-10 container mx-auto p-3 md:w-[26%] w-100%">
+          <div class="border-b-2 border-[#333333]">
+            <h3 class="head">Featured</h3>
+          </div>
+          <h3
+            class="text-lg md:text-2xl text-[#333333] font-semibold md:mt-5 mt-3 mb-2"
+          >
+            Daily Rundowns
+          </h3>
+
+          <div class="border p-4">
+            <div>
+              <div>
+                <h4 class="font-medium">Earnings:</h4>
+
+                <div class="mt-2">
+                  <span class="list-items">Csan</span>
+                  <span class="list-items">Alya</span>
+                  <span class="list-items">Gato</span>
+                  <span class="list-items">Css</span>
+                </div>
+
+                <div class="mt-3">
+                  <span class="list-items">VZLA</span>
+                  <span class="list-items">MFH</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <h4 class="font-medium mt-4">Movers:</h4>
+
+                <div class="mt-2">
+                  <span class="list-items">rev</span>
+                  <span class="list-items">petv</span>
+                  <span class="list-items">rytm</span>
+                  <span class="list-items">srrk</span>
+                </div>
+
+                <div class="mt-3">
+                  <span class="list-items">vera</span>
+                  <span class="list-items">kzia</span>
+                  <span class="list-items">sym</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <h4 class="font-medium mt-4">Technicals:</h4>
+
+                <div class="mt-2">
+                  <span class="list-items">bearish</span>
+                  <span class="list-items">regn</span>
+                  <span class="list-items">tsla</span>
+                  <span class="list-items">mcd</span>
+                </div>
+
+                <div class="mt-3">
+                  <span class="list-items">vera</span>
+                  <span class="list-items">kzia</span>
+                  <span class="list-items">sym</span>
+                  <span class="list-items">kzia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- img one -->
+          <div class="mt-4">
+            <img
+              src="images/Rectangle 182.png"
+              class="w-full sm:h-[190px]"
+              alt=""
+            />
+            <p class="font-medium text-center md:my-4 my-2">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+
+          <div class="mt-4">
+            <img
+              src="images/Rectangle 183.png"
+              class="w-full sm:h-[190px]"
+              alt=""
+            />
+            <p class="font-medium text-center md:my-4 my-2">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+
+          <div class="mt-4">
+            <img
+              src="images/Rectangle 184.png"
+              class="w-full h-[190px]"
+              alt=""
+            />
+            <p class="font-medium text-center md:my-4 my-2">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+      <p class="text-center font-semibold text-gray-700 p-3 bg-[#F5F5F5]">
+        All right reserved to Ticker-AI
+      </p>
+    </footer>
+  </body>
+</html>

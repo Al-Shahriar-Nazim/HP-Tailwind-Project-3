@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list{
+    @apply bg-[#333333] text-white w-[80px] h-[20px] flex justify-center items-center text-xs rounded-sm
+}
+.head{
+    @apply uppercase md:text-2xl text-lg text-[#333333] font-semibold mb-3
+}
+.list-items{
+    @apply bg-[#5677AC26] px-2 py-1 rounded-lg text-sm mx-1 hover:bg-black hover:text-white hover:scale-105 transition-all duration-300
+}
